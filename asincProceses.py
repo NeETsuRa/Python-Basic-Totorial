@@ -1,3 +1,4 @@
+# Asincron processing
 def find_divisibles(inrange, div_by):
     print("finding nums in range {} divisible by {}".format(inrange, div_by))
     located = []
