@@ -1,6 +1,7 @@
 import logging
 import multiprocessing
 from multiprocessing import Pool
+# Python Multiprocessing example
 
 logging.basicConfig(filename='logfile.log',level=logging.DEBUG)
 
@@ -14,9 +15,10 @@ def job(num):
     logging.info('job {} + {}'.format(str('str'), str('sst')))
 
 if __name__ == '__main__':
-    #for i in range(500):
-    #    p = multiprocessing.Process(target=spawn, args=(i, i+1))
-    #    p.start()
+    for i in range(500):
+        p = multiprocessing.Process(target=spawn, args=(i, i+1))
+        p.start()
+    
     logging.info('main {} + {}'.format(str('str'), str('sst')))
     p = Pool(processes=20)
     data = p.map(job, [i for i in range(500)])
