@@ -1,15 +1,18 @@
-import SomeStatistic as s
+#Import own py class
+#import SomeStatistic as s
 import os
+# different ways how to import
 #from statistics import mean as m
-# #from statistics import mean,...
+#from statistics import mean,...
 #from statistics import *
 import subprocess
 
 # cx-freeze if you wish to make a executable from python
-
+# Simple print function with default value in case of no value
 def printLine (toPrint="No Set Value"):
     print (toPrint)
 
+# Python classes examples (handle documents)
 class DocumentHandler:
     def writeFile(self, text = 'Sample Text to Save\nNew line!', fileName = 'exampleFile.txt'):
         saveFile = open(fileName,'w')
@@ -34,6 +37,7 @@ example_list = [5,2,5,6,1,2,6,7,2,6,3,5,5]
 exDict = {'Jack':15,'Bob':22,'Alice':12,'Kevin':17}
 exDict = {'Jack':[15,'blonde'],'Bob':[22, 'brown'],'Alice':[12,'black'],'Kevin':[17,'red']}
 
+#List functions
 example_list.append(10) #add on end
 example_list.insert(2,8) #add on index (index, val)
 example_list.remove(6) #remove index
@@ -42,10 +46,11 @@ example_list.sort()
 example_list.reverse()
 
 printLine(var)
+
 #x = input('Input Field: ')
-DocumentHandler.writeFile(DocumentHandler)
-print(DocumentHandler.readFile(DocumentHandler))
-s.someStatistic (example_list)
+#DocumentHandler.writeFile(DocumentHandler)
+#print(DocumentHandler.readFile(DocumentHandler))
+#s.someStatistic (example_list)
 print(
 '''
 This
