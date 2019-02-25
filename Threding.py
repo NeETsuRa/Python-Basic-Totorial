@@ -1,3 +1,4 @@
+#Example of an Queue
 import threading
 from queue import Queue
 import time
