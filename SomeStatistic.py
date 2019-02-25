@@ -1,5 +1,6 @@
 import statistics as s
 
+# dooing statistic on a list. The class is/can be used in the PythonExampleCode.
 def someStatistic(list):
     x = s.mean(list)
     print(x)
