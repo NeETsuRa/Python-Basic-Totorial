@@ -1,6 +1,8 @@
 import urllib.request
 import urllib.parse
 
+# Working with web sites
+
 try:
     url = 'https://www.google.com/search?q=python'
 
@@ -10,6 +12,7 @@ try:
     resp = urllib.request.urlopen(req)
     respData = resp.read()
 
+# create the file and save the response data of the web site
     saveFile = open('withHeaders.txt','w')
     saveFile.write(str(respData))
     saveFile.close()
